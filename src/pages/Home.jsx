@@ -23,22 +23,26 @@ const Home = () => {
           name="description"
           content="Salle de sport premium à Mourouj, Tunis. Musculation, cardio, coaching personnel, cours collectifs. Réservez votre séance d'essai."
         />
-        <link rel="canonical" href="https://cmgclubsports.tn/" />
-        <link rel="alternate" hreflang="fr" href="https://cmgclubsports.tn/" />
+        <link rel="canonical" href="https://cmg-club-sport.vercel.app/" />
+        <link
+          rel="alternate"
+          hreflang="fr"
+          href="https://cmg-club-sport.vercel.app/"
+        />
         <link
           rel="alternate"
           hreflang="en"
-          href="https://cmgclubsports.tn/en/"
+          href="https://cmg-club-sport.vercel.app/en/"
         />
         {/* <link
           rel="alternate"
           hreflang="ar"
-          href="https://cmgclubsports.tn/ar/"
+          href="https://cmg-club-sport.vercel.app/ar/"
         /> */}
         <link
           rel="alternate"
           hreflang="x-default"
-          href="https://cmgclubsports.tn/"
+          href="https://cmg-club-sport.vercel.app/"
         />
       </Helmet>
       <Hero /> {/* 1. Hook */}
