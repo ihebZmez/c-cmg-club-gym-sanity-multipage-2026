@@ -16,13 +16,14 @@
 
 ## Before Launch
 
-- [ ] Configure EmailJS
-- [ ] Seed production content in Sanity
+- [x] Configure EmailJS
+- [x] Seed production content in Sanity
 - [ ] Google Business Profile setup (Mourouj)
-- [ ] Deploy frontend on Vercel
+- [x] Deploy frontend on Vercel
 - [ ] Deploy Studio on sanity.studio
 - [ ] Invite client as Editor
 - [ ] Mobile QA pass
+- [ ] Create a sending account "cmgclubsports.contact@gmail.com"
 - [ ] Analytics (Google Analytics 4 / Plausible)
 
 ## After Launch (optional)

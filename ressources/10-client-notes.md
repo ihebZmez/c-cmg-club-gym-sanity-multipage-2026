@@ -20,7 +20,7 @@ A: No. Change them in Sanity → live on the site within seconds.
 A: Yes. Create the coach / class in Sanity — it appears automatically in the relevant section.
 
 **Q: Do you provide photos?**
-A: We use placeholder content. A professional photoshoot can be added for 500 DT.
+A: We use placeholder content. A professional photoshoot can be added for 200 DT.
 
 **Q: How long until launch?**
 A: 2–3 days once content is ready.
@@ -29,7 +29,7 @@ A: 2–3 days once content is ready.
 A: Foundation included (meta tags, sitemap, JSON-LD, Google Business Profile guidance). Advanced SEO available on request.
 
 **Q: Maintenance?**
-A: Optional — 200 DT / month for updates, backups and support.
+A: Optional — 10 DT / Hr for updates, backups and support.
 
 ## Deliverables
 

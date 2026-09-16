@@ -26,13 +26,13 @@
 
 ## Suggested Pricing
 
-| Tier                        | Price    | Includes                                                   |
-| --------------------------- | -------- | ---------------------------------------------------------- |
-| **Essential**               | 3 500 DT | Site + Sanity CMS + deploy                                 |
-| **Premium** _(recommended)_ | 5 500 DT | + SEO + client training + 1 month support                  |
-| **Full**                    | 7 500 DT | + Arabic activation + 3 months support + content migration |
+| Tier                        | Price    | Includes                                                 |
+| --------------------------- | -------- | -------------------------------------------------------- |
+| **Essential**               | 1 500 DT | Site + Sanity CMS + deploy                               |
+| **Premium** _(recommended)_ | 2 200 DT | + SEO + client training + 3 month support                |
+| **Full**                    | 2 600 DT | + Arabic activation + 1 year support + content migration |
 
 ## Recurring (optional)
 
-- Maintenance: 200 DT / month
-- Content updates: 100 DT / hour
+- Maintenance: 100 DT / month
+- Content updates: 10 DT / hour
