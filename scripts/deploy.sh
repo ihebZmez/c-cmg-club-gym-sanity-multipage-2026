@@ -11,7 +11,7 @@ while [ "$attempts" -lt 15 ]; do
   status="$(docker inspect --format '{{.State.Health.Status}}' "$container" 2>/dev/null || true)"
   case "$status" in
     healthy)
-      echo "Deployment ready at http://localhost:${APP_PORT:-8080}"
+      echo "Deployment ready at http://localhost:${APP_PORT:-0001}"
       exit 0
       ;;
     unhealthy)

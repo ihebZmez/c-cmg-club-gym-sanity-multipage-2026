@@ -5,7 +5,7 @@ param(
 )
 
 if (-not $Url) {
-    $port = if ($env:APP_PORT) { $env:APP_PORT } else { '8080' }
+    $port = if ($env:APP_PORT) { $env:APP_PORT } else { '0001' }
     $Url = "http://localhost:$port/health"
 }
 

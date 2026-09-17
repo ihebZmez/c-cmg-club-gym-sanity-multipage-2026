@@ -1,109 +1,107 @@
-# Docker Operations Guide
+# Docker operations guide
 
-This project is a Vite/React single-page application. The production image builds the app with Node and serves only the generated static files from Nginx. No Node process runs in production.
+This project builds a Vite/React app for production and runs the dev server with hot reload for local development.
 
 ## Requirements
 
-- Docker Engine 24+ with Docker Compose v2 (`docker compose version`)
-- At least 256 MB available memory for a production build and container
-- Ports `8080` (production) or `5173` (development) available
+- Docker Engine 24+
+- Docker Compose v2
+- Ports `0001` and `5173` available
 
 ## Production
 
-The production Compose file limits the web container to `128 MB` RAM and `0.50` CPU. Change the host port without changing the container:
+Start the production build and serve the static site:
 
 ```bash
-APP_PORT=8088 docker compose up --build --detach
+docker compose up --build -d
 ```
 
-On PowerShell:
+Open: http://localhost:0001
 
-```powershell
-$env:APP_PORT = "8088"
-docker compose up --build --detach
-```
-
-The default URL is <http://localhost:8080>. The deployment helper builds, starts, and waits for a healthy container:
-
-```bash
-sh ./scripts/deploy.sh
-```
-
-Useful production commands:
+Useful commands:
 
 ```bash
 docker compose ps
-docker compose logs --follow --tail=100 web
+docker compose logs --tail=100 web
 docker compose restart web
-docker compose pull
 docker compose down
 docker compose down --remove-orphans
-docker image ls t-gym-multipage
 ```
 
-Run an external health check from Linux/macOS/WSL or PowerShell:
+Health check:
 
 ```bash
 sh ./scripts/healthcheck.sh
-sh ./scripts/healthcheck.sh http://localhost:8080/health
+sh ./scripts/healthcheck.sh http://localhost:0001/health
 ```
+
+PowerShell:
 
 ```powershell
 .\scripts\healthcheck.ps1
-.\scripts\healthcheck.ps1 -Url http://localhost:8080/health
+.\scripts\healthcheck.ps1 -Url http://localhost:0001/health
 ```
 
-The health endpoint returns `200 OK` and `ok` at `/health`. It is used both by Docker and the helper scripts. A non-zero script exit code means the service should be treated as unavailable by CI or monitoring.
+The app exposes `/health` and returns `ok` when running correctly.
 
-## Development With Hot Reload
+## Development
 
-The development override mounts the source tree and limits the Vite container to `512 MB` RAM and `1.00` CPU:
+Run the app with Vite hot reload:
 
 ```bash
 docker compose -f compose.dev.yaml up --build
 ```
 
-Open <http://localhost:5173>. Stop it with:
+Open: http://localhost:5173
+
+Stop it with:
 
 ```bash
 docker compose -f compose.dev.yaml down
 docker compose -f compose.dev.yaml down --volumes
 ```
 
-## Configuration
+## Common variables
 
-| Variable | Default | Purpose |
-| --- | --- | --- |
-| `APP_PORT` | `8080` | Host port for production |
-| `DEV_PORT` | `5173` | Host port for development |
-| `ATTEMPTS` | `5` | Shell health-check attempts |
-| `DELAY` | `2` | Seconds between shell attempts |
+| Variable   | Default | Purpose                  |
+| ---------- | ------- | ------------------------ |
+| `APP_PORT` | `0001`  | Production host port     |
+| `DEV_PORT` | `5173`  | Development host port    |
+| `ATTEMPTS` | `5`     | Health-check retry count |
+| `DELAY`    | `2`     | Seconds between retries  |
 
-The container limits are intentionally conservative for a small VPS. Raise `mem_limit` or `cpus` in `compose.yaml` only when the host workload and traffic require it.
+## Quick deploy helper
+
+```bash
+sh ./scripts/deploy.sh
+```
+
+This builds the project, starts the container, and waits for the health check to pass.
 
 ## Troubleshooting
 
-Check the rendered Compose configuration:
+Check the rendered config:
 
 ```bash
 docker compose config
+docker compose -f compose.dev.yaml config
 ```
 
-Inspect the container and its health state:
+Inspect health status:
 
 ```bash
 docker compose ps
 docker inspect --format '{{json .State.Health}}' "$(docker compose ps -q web)"
 ```
 
-If a browser route returns 404, confirm that requests reach Nginx on the published port and that `docker/nginx.conf` is mounted by rebuilding the image:
+If routes fail, rebuild the image and restart:
 
 ```bash
 docker compose build --no-cache
-docker compose up --detach
+docker compose up -d --force-recreate
 ```
 
-For a clean local rebuild, remove only this project's container and image:
+For a full local reset:
 
 ```bash
 docker compose down --rmi local --volumes

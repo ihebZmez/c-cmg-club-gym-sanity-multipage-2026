@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 set -eu
 
-URL="${1:-http://localhost:${APP_PORT:-8080}/health}"
+URL="${1:-http://localhost:${APP_PORT:-0001}/health}"
 ATTEMPTS="${ATTEMPTS:-5}"
 DELAY="${DELAY:-2}"
 
