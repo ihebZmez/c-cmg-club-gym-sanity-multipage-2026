@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://cmg-club-sport.vercel.app/sitemap.xml
+Sitemap: https://cmg-club-sports.vercel.app/sitemap.xml

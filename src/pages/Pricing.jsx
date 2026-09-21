@@ -7,7 +7,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import SectionTitle from "../components/ui/SectionTitle";
 import PricingCard from "../components/ui/PricingCard";
 import { Check } from "lucide-react";
-import { Helmet } from "react-helmet-async";
+import Seo from "../components/seo/Seo";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -104,36 +104,11 @@ const PricingPage = () => {
       ref={sectionRef}
       className="min-h-screen pt-8 pb-20 px-4 md:px-8 bg-gym-bg"
     >
-      <Helmet>
-        <title>
-          CMG club sports | Salle de sport & fitness à Mourouj, Tunis
-        </title>
-        <meta
-          name="description"
-          content="Salle de sport premium à Mourouj, Tunis. Musculation, cardio, coaching personnel, cours collectifs. Réservez votre séance d'essai."
-        />
-        <link rel="canonical" href="https://cmg-club-sport.vercel.app/" />
-        <link
-          rel="alternate"
-          hreflang="fr"
-          href="https://cmg-club-sport.vercel.app/"
-        />
-        <link
-          rel="alternate"
-          hreflang="en"
-          href="https://cmg-club-sport.vercel.app/en/"
-        />
-        {/* <link
-          rel="alternate"
-          hreflang="ar"
-          href="https://cmg-club-sport.vercel.app/ar/"
-        /> */}
-        <link
-          rel="alternate"
-          hreflang="x-default"
-          href="https://cmg-club-sport.vercel.app/"
-        />
-      </Helmet>
+      <Seo
+        title="Tarifs salle de sport | CMG Club Sports"
+        description="Découvrez les abonnements et tarifs de CMG Club Sports à Mourouj : accès gym, coaching, cours collectifs et offres premium."
+        canonical="/tarifs"
+      />
       <div className="max-w-7xl mx-auto">
         <SectionTitle
           badge={t("pricing.badge")}

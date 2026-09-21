@@ -112,7 +112,7 @@ const CTA = () => {
           </div>
         </div>
 
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
+        <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
           <div className="cta-title-line overflow-hidden">
             <span className="inline-block text-white">{t("cta.title")}</span>
           </div>
@@ -121,7 +121,7 @@ const CTA = () => {
               {t("cta.titleHighlight")}
             </span>
           </div>
-        </h1>
+        </h2>
 
         <p className="cta-subtitle text-white/60 text-base md:text-lg max-w-2xl mx-auto mt-6 leading-relaxed">
           {t("cta.subtitle")}

@@ -17,7 +17,7 @@ import {
 } from "lucide-react";
 import gymConfig from "../config/gymConfig";
 import { useSiteSettings } from "../hooks/useSiteSettings";
-import { Helmet } from "react-helmet-async";
+import Seo from "../components/seo/Seo";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -94,37 +94,11 @@ const ContactPage = () => {
       ref={sectionRef}
       className="min-h-screen pt-8 pb-20 px-4 md:px-8 bg-gym-bg"
     >
-      <Helmet>
-        <title>Contact & Réservation | CMG club sports Mourouj</title>
-        <meta
-          name="description"
-          content="Réservez votre séance d'essai gratuite chez CMG club sports à Mourouj, Tunis. Contact par téléphone, WhatsApp ou formulaire."
-        />
-        <link
-          rel="canonical"
-          href="https://cmg-club-sport.vercel.app/contact"
-        />
-        <link
-          rel="alternate"
-          hreflang="fr"
-          href="https://cmg-club-sport.vercel.app/"
-        />
-        <link
-          rel="alternate"
-          hreflang="en"
-          href="https://cmg-club-sport.vercel.app/en/"
-        />
-        {/* <link
-          rel="alternate"
-          hreflang="ar"
-          href="https://cmg-club-sport.vercel.app/ar/"
-        /> */}
-        <link
-          rel="alternate"
-          hreflang="x-default"
-          href="https://cmg-club-sport.vercel.app/"
-        />
-      </Helmet>
+      <Seo
+        title="Contact & réservation | CMG Club Sports Mourouj"
+        description="Contactez CMG Club Sports à Mourouj pour réserver votre séance d'essai, obtenir un devis ou prendre rendez-vous avec nos coachs."
+        canonical="/contact"
+      />
       <div className="max-w-7xl mx-auto">
         <SectionTitle
           badge={t("contact.badge")}

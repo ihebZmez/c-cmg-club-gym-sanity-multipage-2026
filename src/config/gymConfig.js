@@ -4,6 +4,7 @@
 export const gymConfig = {
   name: "CMG Club Sports",
   tagline: "L'excellence du sport tunisien",
+  siteUrl: "https://cmg-club-sports.vercel.app",
 
   // Contact
   phone: "+216 71 88 96 58",
