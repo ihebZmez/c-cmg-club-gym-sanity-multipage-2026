@@ -117,7 +117,7 @@ const gymBenefits = [
 const clubInfo = {
   heading: "Visitez CMG Club Sports",
   address: "CMG Club Sports, Tunis, Tunisie",
-  contact: { phone: "(+216) 71 88 96 58", email: "contact@cmg-clubsport.tn" },
+  contact: { phone: "(+216) 53 85 31 55", email: "contact@cmg-clubsport.tn" },
 };
 
 // Club Hours (Updated to match CMG Club Sports)
