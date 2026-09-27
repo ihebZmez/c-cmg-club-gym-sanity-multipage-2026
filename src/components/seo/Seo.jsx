@@ -6,7 +6,7 @@ const defaultTitle =
 const defaultDescription =
   "CMG Club Sports est votre salle de sport premium à Mourouj, Tunis : musculation, cardio, coaching personnel, cours collectifs, coaching sportif et séance d'essai gratuite.";
 const defaultKeywords =
-  "salle de sport Mourouj, gym Tunis, fitness Tunis, musculation Mourouj, coaching personnel Tunis, cours collectifs Tunis, CMG Club Sports";
+  "salle de sport Mourouj, gym Tunis, fitness Tunis, musculation Mourouj, coaching personnel Tunis, cours collectifs Tunis, CMG Club Sports, Club Med Gym";
 
 const Seo = ({
   title = defaultTitle,
