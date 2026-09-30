@@ -11,8 +11,10 @@ import Testimonials from "../components/sections/Testimonials";
 import Transformations from "../components/sections/Transformations";
 import CTA from "../components/sections/CTA";
 import Seo from "../components/seo/Seo";
+import { isPackage1SiteVitrine } from "../config/packageMode";
 
 const Home = () => {
+  const package1SiteVitrine = isPackage1SiteVitrine();
   return (
     <>
       <Seo
@@ -21,15 +23,17 @@ const Home = () => {
         canonical="/"
       />
       <Hero /> {/* 1. Hook */}
-      <Promotions /> {/* 2. Urgency / offer */}
+      {!package1SiteVitrine && <Promotions />} {/* 2. Urgency / offer */}
       <About /> {/* 3. Trust: who we are */}
       <Activities /> {/* 4. What we offer */}
       <Coaches /> {/* 5. The team */}
-      <PersonalTraining /> {/* 6. Premium upsell (right after Coaches) */}
+      {!package1SiteVitrine && (
+        <PersonalTraining /> /* 6. Premium upsell (right after Coaches) */
+      )}
       <SchedulePreview /> {/* 7. When — teaser */}
       <Pricing /> {/* 8. How much */}
       <Testimonials /> {/* 9. Proof: social */}
-      <Transformations /> {/* 10. Proof: visual */}
+      {!package1SiteVitrine && <Transformations />} {/* 10. Proof: visual */}
       <CTA /> {/* 11. Close */}
     </>
   );

@@ -7,6 +7,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Menu, X, Dumbbell, ChevronDown } from "lucide-react";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { useSiteSettings } from "../../hooks/useSiteSettings";
+import { isPackage1SiteVitrine } from "../../config/packageMode";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -14,6 +15,7 @@ const Navbar = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
   const { data: settings } = useSiteSettings();
+  const package1SiteVitrine = isPackage1SiteVitrine();
   const [menuOpen, setMenuOpen] = useState(false);
   const [moreOpen, setMoreOpen] = useState(false);
   const moreRef = useRef(null);
@@ -32,16 +34,19 @@ const Navbar = () => {
     { path: "/", title: t("nav.home") },
     { path: "/activites", title: t("nav.activities") },
     { path: "/tarifs", title: t("nav.pricing") },
-    { path: "/coaching-personnel", title: t("nav.personalTraining") },
+    !package1SiteVitrine && {
+      path: "/coaching-personnel",
+      title: t("nav.personalTraining"),
+    },
     { path: "/planning", title: t("nav.schedule") },
     { path: "/contact", title: t("nav.contact") },
-  ];
+  ].filter(Boolean);
 
   const moreLinks = [
-    { path: "/corporate", title: t("nav.corporate") },
+    !package1SiteVitrine && { path: "/corporate", title: t("nav.corporate") },
     { path: "/actualites", title: t("nav.news") },
-    { path: "/shop", title: t("nav.shop") },
-  ];
+    !package1SiteVitrine && { path: "/shop", title: t("nav.shop") },
+  ].filter(Boolean);
 
   const handleBookTrial = () => navigate("/contact");
 
@@ -188,44 +193,46 @@ const Navbar = () => {
             ))}
 
             {/* "Plus" dropdown */}
-            <li ref={moreRef} className="relative">
-              <button
-                onClick={() => setMoreOpen((o) => !o)}
-                className={`flex items-center gap-1 text-sm font-medium uppercase tracking-wider transition-colors duration-300 ${
-                  moreOpen
-                    ? "text-gym-orange"
-                    : "text-white/60 hover:text-white"
-                }`}
-              >
-                Plus
-                <ChevronDown
-                  className={`w-3.5 h-3.5 transition-transform duration-200 ${
-                    moreOpen ? "rotate-180" : ""
+            {moreLinks.length > 0 && (
+              <li ref={moreRef} className="relative">
+                <button
+                  onClick={() => setMoreOpen((o) => !o)}
+                  className={`flex items-center gap-1 text-sm font-medium uppercase tracking-wider transition-colors duration-300 ${
+                    moreOpen
+                      ? "text-gym-orange"
+                      : "text-white/60 hover:text-white"
                   }`}
-                />
-              </button>
+                >
+                  Plus
+                  <ChevronDown
+                    className={`w-3.5 h-3.5 transition-transform duration-200 ${
+                      moreOpen ? "rotate-180" : ""
+                    }`}
+                  />
+                </button>
 
-              {moreOpen && (
-                <div className="absolute top-full mt-3 right-0 min-w-[180px] bg-gym-bg-light rounded-xl border border-gym-border shadow-2xl overflow-hidden py-2">
-                  {moreLinks.map((link) => (
-                    <NavLink
-                      key={link.path}
-                      to={link.path}
-                      onClick={() => setMoreOpen(false)}
-                      className={({ isActive }) =>
-                        `block px-4 py-2.5 text-sm transition-colors ${
-                          isActive
-                            ? "text-gym-orange bg-gym-orange/10"
-                            : "text-white/70 hover:text-white hover:bg-white/5"
-                        }`
-                      }
-                    >
-                      {link.title}
-                    </NavLink>
-                  ))}
-                </div>
-              )}
-            </li>
+                {moreOpen && (
+                  <div className="absolute top-full mt-3 right-0 min-w-[180px] bg-gym-bg-light rounded-xl border border-gym-border shadow-2xl overflow-hidden py-2">
+                    {moreLinks.map((link) => (
+                      <NavLink
+                        key={link.path}
+                        to={link.path}
+                        onClick={() => setMoreOpen(false)}
+                        className={({ isActive }) =>
+                          `block px-4 py-2.5 text-sm transition-colors ${
+                            isActive
+                              ? "text-gym-orange bg-gym-orange/10"
+                              : "text-white/70 hover:text-white hover:bg-white/5"
+                          }`
+                        }
+                      >
+                        {link.title}
+                      </NavLink>
+                    ))}
+                  </div>
+                )}
+              </li>
+            )}
           </ul>
 
           {/* Right side */}
@@ -292,35 +299,37 @@ const Navbar = () => {
           ))}
 
           {/* More section in mobile */}
-          <li className="pt-3 border-t border-gym-border">
-            <p className="text-white/30 text-[10px] uppercase tracking-[0.2em] mb-2">
-              Plus
-            </p>
-            <ul className="flex flex-col gap-4">
-              {moreLinks.map((link, i) => (
-                <li
-                  key={link.path}
-                  ref={(el) =>
-                    (mobileItemsRef.current[navLinks.length + 1 + i] = el)
-                  }
-                >
-                  <NavLink
-                    to={link.path}
-                    onClick={closeMenu}
-                    className={({ isActive }) =>
-                      `text-base font-medium uppercase tracking-wider transition-colors ${
-                        isActive
-                          ? "text-gym-orange"
-                          : "text-white/60 hover:text-white"
-                      }`
+          {moreLinks.length > 0 && (
+            <li className="pt-3 border-t border-gym-border">
+              <p className="text-white/30 text-[10px] uppercase tracking-[0.2em] mb-2">
+                Plus
+              </p>
+              <ul className="flex flex-col gap-4">
+                {moreLinks.map((link, i) => (
+                  <li
+                    key={link.path}
+                    ref={(el) =>
+                      (mobileItemsRef.current[navLinks.length + 1 + i] = el)
                     }
                   >
-                    {link.title}
-                  </NavLink>
-                </li>
-              ))}
-            </ul>
-          </li>
+                    <NavLink
+                      to={link.path}
+                      onClick={closeMenu}
+                      className={({ isActive }) =>
+                        `text-base font-medium uppercase tracking-wider transition-colors ${
+                          isActive
+                            ? "text-gym-orange"
+                            : "text-white/60 hover:text-white"
+                        }`
+                      }
+                    >
+                      {link.title}
+                    </NavLink>
+                  </li>
+                ))}
+              </ul>
+            </li>
+          )}
         </ul>
 
         <div className="mt-auto pt-8">
