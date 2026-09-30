@@ -115,12 +115,12 @@ const gymBenefits = [
 
 // Club Info
 const clubInfo = {
-  heading: "Visitez CMG Club Sports",
-  address: "CMG Club Sports, Tunis, Tunisie",
-  contact: { phone: "(+216) 53 85 31 55", email: "contact@cmg-clubsport.tn" },
+  heading: "Visitez Club Med Gym",
+  address: "Club Med Gym, Tunis, Tunisie",
+  contact: { phone: "(+216) 53 85 31 55", email: "contact@club-med-gym.tn" },
 };
 
-// Club Hours (Updated to match CMG Club Sports)
+// Club Hours (Updated to match Club Med Gym)
 const clubHours = [
   { day: "Lun–Ven", time: "07:00 – 22:00" },
   { day: "Samedi", time: "07:00 – 18:00" },
@@ -132,12 +132,12 @@ const socials = [
   {
     name: "Instagram",
     icon: "/images/insta.png",
-    url: "https://instagram.com/cmgclubsport",
+    url: "https://www.instagram.com/club_med_gym/?hl=fr",
   },
   {
     name: "Facebook",
     icon: "/images/fb.png",
-    url: "https://facebook.com/cmgclubsport",
+    url: "https://www.facebook.com/clubmedgym/?locale=fr_FR",
   },
 ];
 
@@ -161,7 +161,7 @@ const featuredEquipment = [
     image: "/images/equipment2.png",
     title: "Repoussez vos limites",
     description:
-      "CMG Club Sports compte parmi les salles les mieux équipées au monde pour la force.",
+      "Club Med Gym compte parmi les salles les mieux équipées au monde pour la force.",
     skill: "Tous niveaux",
     carbon: "Puissance",
     shape: "Intensité",

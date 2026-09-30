@@ -1,6 +1,6 @@
-# CMG Club Sports — SEO Audit Report
+# Club Med Gym — SEO Audit Report
 
-**Site:** cmg-club-sports.vercel.app
+**Site:** club-med-gym.vercel.app
 **Date:** 2026-09-21
 
 ---
@@ -67,16 +67,16 @@
 
 ## 📝 Current Meta
 
-| Field            | Value                                                                                                                                                                                                             |
-| ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| URL              | `cmg-club-sports.vercel.app`                                                                                                                                                                                      |
-| Title            | `CMG club sports \| Salle de sport & fitness à Mourouj, Tunis`                                                                                                                                                    |
-| Meta Description | `CMG club sports, votre salle de sport premium à Mourouj, Tunis. Musculation, cardio, coaching personnel, cours collectifs (Zumba, Boxing, Yoga). Équipements Technogym. Réservez votre séance d'essai gratuite.` |
-| Canonical        | `https://cmg-club-sport.vercel.app/`                                                                                                                                                                              |
-| Sitemap          | `https://cmg-club-sport.vercel.app/sitemap.xml`                                                                                                                                                                   |
-| Robots           | `https://cmg-club-sports.vercel.app/robots.txt`                                                                                                                                                                   |
+| Field            | Value                                                                                                                                                                                                          |
+| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| URL              | `club-med-gym.vercel.app`                                                                                                                                                                                      |
+| Title            | `Club Med Gym \| Salle de sport & fitness à Mourouj, Tunis`                                                                                                                                                    |
+| Meta Description | `Club Med Gym, votre salle de sport premium à Mourouj, Tunis. Musculation, cardio, coaching personnel, cours collectifs (Zumba, Boxing, Yoga). Équipements Technogym. Réservez votre séance d'essai gratuite.` |
+| Canonical        | `https://club-med-gym.vercel.app/`                                                                                                                                                                             |
+| Sitemap          | `https://club-med-gym.vercel.app/sitemap.xml`                                                                                                                                                                  |
+| Robots           | `https://club-med-gym.vercel.app/robots.txt`                                                                                                                                                                   |
 
-> ⚠️ Note: canonical uses `cmg-club-sport` (singular) while the site is `cmg-club-sports` (plural) — verify which is correct.
+> ⚠️ Note: canonical uses `club-med-gym` (singular) while the site is `club-med-gym` (plural) — verify which is correct.
 
 ---
 

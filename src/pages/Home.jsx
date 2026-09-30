@@ -16,8 +16,8 @@ const Home = () => {
   return (
     <>
       <Seo
-        title="CMG Club Sports | Salle de sport & fitness à Mourouj, Tunis"
-        description="CMG Club Sports est votre salle de sport premium à Mourouj, Tunis. Musculation, cardio, coaching personnel, cours collectifs, coaching sportif et séance d'essai gratuite."
+        title="Club Med Gym | Salle de sport & fitness à Mourouj, Tunis"
+        description="Club Med Gym est votre salle de sport premium à Mourouj, Tunis. Musculation, cardio, coaching personnel, cours collectifs, coaching sportif et séance d'essai gratuite."
         canonical="/"
       />
       <Hero /> {/* 1. Hook */}

@@ -7,7 +7,7 @@ export default function CorporatePage() {
   return (
     <div className="pt-24">
       <Seo
-        title="Offres corporate & entreprise | CMG Club Sports"
+        title="Offres corporate & entreprise | Club Med Gym"
         description="Offres sport d'entreprise pour vos équipes : programmes fitness, coaching, wellness et activités sportives en entreprise."
         canonical="/corporate"
       />

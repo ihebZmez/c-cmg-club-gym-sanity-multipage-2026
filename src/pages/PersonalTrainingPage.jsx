@@ -7,8 +7,8 @@ export default function PersonalTrainingPage() {
   return (
     <div className="pt-24">
       <Seo
-        title="Coaching personnel | CMG Club Sports Mourouj"
-        description="Profitez d'un coaching personnel personnalisé à CMG Club Sports à Mourouj pour perdre du poids, prendre du muscle et améliorer votre forme."
+        title="Coaching personnel | Club Med Gym Mourouj"
+        description="Profitez d'un coaching personnel personnalisé à Club Med Gym à Mourouj pour perdre du poids, prendre du muscle et améliorer votre forme."
         canonical="/coaching-personnel"
       />
       <PersonalTraining />

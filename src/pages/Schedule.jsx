@@ -41,8 +41,8 @@ const SchedulePage = () => {
   return (
     <div className="min-h-screen pt-8 pb-20 px-4 md:px-8 bg-gym-bg">
       <Seo
-        title="Planning des cours | CMG Club Sports Mourouj"
-        description="Consultez le planning hebdomadaire de CMG Club Sports à Mourouj : yoga, cardio, boxe, musculation et cours collectifs."
+        title="Planning des cours | Club Med Gym Mourouj"
+        description="Consultez le planning hebdomadaire de Club Med Gym à Mourouj : yoga, cardio, boxe, musculation et cours collectifs."
         canonical="/planning"
       />
       <div className="max-w-7xl mx-auto">

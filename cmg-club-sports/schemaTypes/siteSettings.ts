@@ -9,7 +9,7 @@ export default defineType({
       name: 'gymName',
       title: 'Nom du club',
       type: 'string',
-      initialValue: 'CMG club sports',
+      initialValue: 'Club Med Gym',
     }),
     defineField({name: 'tagline', title: 'Slogan', type: 'string'}),
     defineField({name: 'phone', title: 'Téléphone', type: 'string'}),

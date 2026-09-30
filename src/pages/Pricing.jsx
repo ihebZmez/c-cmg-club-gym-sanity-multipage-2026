@@ -105,8 +105,8 @@ const PricingPage = () => {
       className="min-h-screen pt-8 pb-20 px-4 md:px-8 bg-gym-bg"
     >
       <Seo
-        title="Tarifs salle de sport | CMG Club Sports"
-        description="Découvrez les abonnements et tarifs de CMG Club Sports à Mourouj : accès gym, coaching, cours collectifs et offres premium."
+        title="Tarifs salle de sport | Club Med Gym"
+        description="Découvrez les abonnements et tarifs de Club Med Gym à Mourouj : accès gym, coaching, cours collectifs et offres premium."
         canonical="/tarifs"
       />
       <div className="max-w-7xl mx-auto">

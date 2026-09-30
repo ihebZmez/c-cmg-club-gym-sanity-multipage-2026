@@ -1,6 +1,6 @@
 # 01 — Project Overview
 
-## CMG Club Sports
+## Club Med Gym
 
 Premium multi-page website for a Tunisian gym & sports club.
 

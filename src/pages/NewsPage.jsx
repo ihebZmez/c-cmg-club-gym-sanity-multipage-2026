@@ -7,8 +7,8 @@ export default function NewsPage() {
   return (
     <div className="pt-24 pb-20 bg-gym-bg">
       <Seo
-        title="Actualités & conseils fitness | CMG Club Sports"
-        description="Suivez les actualités, conseils fitness et bonnes pratiques de CMG Club Sports à Mourouj pour rester motivé et en forme."
+        title="Actualités & conseils fitness | Club Med Gym"
+        description="Suivez les actualités, conseils fitness et bonnes pratiques de Club Med Gym à Mourouj pour rester motivé et en forme."
         canonical="/actualites"
       />
       <div className="max-w-7xl mx-auto px-4 md:px-8">

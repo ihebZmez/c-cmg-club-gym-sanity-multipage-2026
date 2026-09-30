@@ -23,7 +23,7 @@
 - [ ] Deploy Studio on sanity.studio
 - [ ] Invite client as Editor
 - [ ] Mobile QA pass
-- [ ] Create a sending account "cmgclubsports.contact@gmail.com"
+- [ ] Create a sending account "club-med-gym.contact@gmail.com"
 - [ ] Analytics (Google Analytics 4 / Plausible)
 
 ## After Launch (optional)

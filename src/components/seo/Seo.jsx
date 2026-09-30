@@ -1,12 +1,11 @@
 import { Helmet } from "react-helmet-async";
 import { gymConfig } from "../../config/gymConfig";
 
-const defaultTitle =
-  "CMG Club Sports | Salle de sport & fitness à Mourouj, Tunis";
+const defaultTitle = "Club Med Gym | Salle de sport & fitness à Mourouj, Tunis";
 const defaultDescription =
-  "CMG Club Sports est votre salle de sport premium à Mourouj, Tunis : musculation, cardio, coaching personnel, cours collectifs, coaching sportif et séance d'essai gratuite.";
+  "Club Med Gym est votre salle de sport premium à Mourouj, Tunis : musculation, cardio, coaching personnel, cours collectifs, coaching sportif et séance d'essai gratuite.";
 const defaultKeywords =
-  "salle de sport Mourouj, gym Tunis, fitness Tunis, musculation Mourouj, coaching personnel Tunis, cours collectifs Tunis, CMG Club Sports";
+  "salle de sport Mourouj, gym Tunis, fitness Tunis, musculation Mourouj, coaching personnel Tunis, cours collectifs Tunis, Club Med Gym";
 
 const Seo = ({
   title = defaultTitle,
@@ -30,7 +29,7 @@ const Seo = ({
         }
       />
       <meta name="theme-color" content={gymConfig.accentColor} />
-      <meta name="apple-mobile-web-app-title" content="CMG Club Sports" />
+      <meta name="apple-mobile-web-app-title" content="Club Med Gym" />
       <link rel="canonical" href={canonicalUrl} />
       <link rel="alternate" href={`${gymConfig.siteUrl}/`} hreflang="fr" />
       <link
@@ -45,7 +44,7 @@ const Seo = ({
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={image} />
-      <meta property="og:site_name" content="CMG Club Sports" />
+      <meta property="og:site_name" content="Club Med Gym" />
       <meta property="og:locale" content="fr_TN" />
 
       <meta name="twitter:card" content="summary_large_image" />

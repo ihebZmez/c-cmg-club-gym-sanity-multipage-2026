@@ -40,8 +40,8 @@ const ActivitiesPage = () => {
       className="min-h-screen pt-8 pb-20 px-4 md:px-8 bg-gym-bg"
     >
       <Seo
-        title="Nos activités de fitness | CMG Club Sports Mourouj"
-        description="Découvrez les activités CMG Club Sports à Mourouj : musculation, cardio, crossfit, yoga, boxing, cours collectifs et coaching personnel."
+        title="Nos activités de fitness | Club Med Gym Mourouj"
+        description="Découvrez les activités Club Med Gym à Mourouj : musculation, cardio, crossfit, yoga, boxing, cours collectifs et coaching personnel."
         canonical="/activites"
       />
       <div className="max-w-7xl mx-auto">

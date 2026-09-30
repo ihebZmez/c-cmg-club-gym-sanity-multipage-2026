@@ -2,23 +2,23 @@
 // All configurable values are defined here for easy maintenance
 
 export const gymConfig = {
-  name: "CMG Club Sports",
+  name: "Club Med Gym",
   tagline: "L'excellence du sport tunisien",
-  siteUrl: "https://cmg-club-sports.vercel.app",
+  siteUrl: "https://club-med-gym.vercel.app",
 
   // Contact
   phone: "+216 53 85 31 55",
   whatsapp: "+216 53 85 31 55",
-  email: "contact@cmg-clubsport.tn",
+  email: "contact@club-med-gym.tn",
   address: "Tunis, Tunisie",
 
   // Social Media
   social: {
-    facebook: "https://facebook.com/cmgclubsport",
-    instagram: "https://instagram.com/cmgclubsport",
-    youtube: "https://youtube.com/cmgclubsport",
-    tiktok: "https://tiktok.com/@cmgclubsport",
-    linkedin: "https://linkedin.com/company/cmgclubsport",
+    facebook: "https://www.facebook.com/clubmedgym/?locale=fr_FR",
+    instagram: "https://www.instagram.com/club_med_gym/?hl=fr",
+    youtube: "https://youtube.com/clubmedgym",
+    tiktok: "https://tiktok.com/@clubmedgym",
+    linkedin: "https://linkedin.com/company/clubmedgym",
   },
 
   // Brand
@@ -39,10 +39,8 @@ export const gymConfig = {
 
   // WhatsApp default messages
   whatsappMessages: {
-    default:
-      "Bonjour, je souhaite avoir plus d'informations sur CMG Club Sports.",
-    trial:
-      "Bonjour, je souhaite réserver une séance d'essai à CMG Club Sports.",
+    default: "Bonjour, je souhaite avoir plus d'informations sur Club Med Gym.",
+    trial: "Bonjour, je souhaite réserver une séance d'essai à Club Med Gym.",
     pricing:
       "Bonjour, je souhaite avoir plus d'informations sur les abonnements.",
   },
