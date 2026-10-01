@@ -119,7 +119,8 @@ const Pricing = () => {
               onClick={() => navigate("/corporate")}
               className="text-gym-orange text-xs font-bold uppercase tracking-wider hover:gap-2 inline-flex items-center gap-1 transition-all"
             >
-              Découvrir <ArrowRight className="w-3.5 h-3.5" />
+              Voir les offres d'entreprise{" "}
+              <ArrowRight className="w-3.5 h-3.5" />
             </button>
           </div>
         )}

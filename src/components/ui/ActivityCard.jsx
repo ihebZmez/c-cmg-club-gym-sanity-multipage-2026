@@ -95,7 +95,7 @@ const ActivityCard = ({ activity }) => {
         </div>
 
         <div className="card-arrow flex items-center gap-2 text-gym-orange text-sm font-medium mt-4 opacity-60 transition-all duration-300">
-          <span>En savoir plus</span>
+          <span>Voir cette activité</span>
           <ArrowRight className="w-4 h-4" />
         </div>
       </div>

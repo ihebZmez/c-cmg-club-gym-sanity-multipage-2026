@@ -1,11 +1,13 @@
 import { useRef } from "react";
+import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import SectionTitle from "../ui/Button"; // Fix: This should be SectionTitle
+import SectionTitle from "../ui/SectionTitle";
 import { useSiteSettings } from "../../hooks/useSiteSettings";
 import gymConfig from "../../config/gymConfig";
+import { isPackage1SiteVitrine } from "../../config/packageMode";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -13,6 +15,7 @@ const About = () => {
   const { t } = useTranslation();
   const { data: settings } = useSiteSettings();
   const gymName = settings?.gymName || gymConfig.name;
+  const package1SiteVitrine = isPackage1SiteVitrine();
   const sectionRef = useRef(null);
 
   // Stats data
@@ -106,6 +109,54 @@ const About = () => {
           <p className="text-gym-orange mt-4 text-sm tracking-wide">
             {t("about.quoteAuthor", { gymName })}
           </p>
+        </div>
+
+        <div className="mt-8 flex flex-wrap items-center justify-center gap-3 text-sm text-white/60">
+          <Link
+            to="/activites"
+            className="hover:text-gym-orange transition-colors"
+          >
+            Activités
+          </Link>
+          <span className="text-white/20">•</span>
+          <Link
+            to="/tarifs"
+            className="hover:text-gym-orange transition-colors"
+          >
+            Tarifs
+          </Link>
+          <span className="text-white/20">•</span>
+          <Link
+            to="/planning"
+            className="hover:text-gym-orange transition-colors"
+          >
+            Planning
+          </Link>
+          {!package1SiteVitrine && (
+            <>
+              <span className="text-white/20">•</span>
+              <Link
+                to="/coaching-personnel"
+                className="hover:text-gym-orange transition-colors"
+              >
+                Coaching personnel
+              </Link>
+            </>
+          )}
+          <span className="text-white/20">•</span>
+          <Link
+            to="/actualites"
+            className="hover:text-gym-orange transition-colors"
+          >
+            Actualités
+          </Link>
+          <span className="text-white/20">•</span>
+          <Link
+            to="/contact"
+            className="hover:text-gym-orange transition-colors"
+          >
+            Contact
+          </Link>
         </div>
       </div>
     </section>

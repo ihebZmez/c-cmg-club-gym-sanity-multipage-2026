@@ -2,11 +2,11 @@ import { Helmet } from "react-helmet-async";
 import { gymConfig } from "../../config/gymConfig";
 
 const defaultTitle =
-  "CMG Club Sports | Salle de sport & fitness à Mourouj, Tunis";
+  "CMG Club Sports | Club Med Gym | Salle de sport, musculation & fitness à Mourouj et Ben Arous";
 const defaultDescription =
-  "CMG Club Sports est votre salle de sport premium à Mourouj, Tunis : musculation, cardio, coaching personnel, cours collectifs, coaching sportif et séance d'essai gratuite.";
+  "CMG Club Sports, aussi connu sous le nom de Club Med Gym, est une salle de sport à Mourouj et Ben Arous spécialisée en musculation, fitness, cardio, coaching personnel et cours collectifs en Tunisie.";
 const defaultKeywords =
-  "salle de sport Mourouj, gym Tunis, fitness Tunis, musculation Mourouj, coaching personnel Tunis, cours collectifs Tunis, CMG Club Sports, Club Med Gym";
+  "CMG Club Sports, Club Med Gym, salle de sport Mourouj, salle de musculation Mourouj, salle de sport Ben Arous, salle de musculation Ben Arous, fitness Mourouj, fitness Ben Arous, club de sport Mourouj, salle de sport près de moi, salle de sport Tunis";
 
 const Seo = ({
   title = defaultTitle,
