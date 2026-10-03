@@ -7,8 +7,8 @@ export default function CorporatePage() {
   return (
     <div className="pt-24">
       <Seo
-        title="Offres corporate & entreprise | Club Med Gym"
-        description="Offres sport d'entreprise pour vos équipes : programmes fitness, coaching, wellness et activités sportives en entreprise."
+        title="Offres Corporate & Entreprises | Club Med Gym El Mourouj"
+        description="Découvrez les offres sportives pour entreprises de Club Med Gym à El Mourouj 1, Ben Arous : fitness, coaching, bien-être et activités sportives pour vos équipes."
         canonical="/corporate"
       />
       <Corporate />

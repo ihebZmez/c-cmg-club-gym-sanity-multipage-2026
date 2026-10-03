@@ -1,6 +1,6 @@
 # Club Med Gym — SEO Audit Report
 
-**Site:** club-med-gym.vercel.app
+**Site:** clubmedgym.vercel.app
 **Date:** 2026-09-21
 
 ---
@@ -69,14 +69,14 @@
 
 | Field            | Value                                                                                                                                                                                                          |
 | ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| URL              | `club-med-gym.vercel.app`                                                                                                                                                                                      |
+| URL              | `clubmedgym.vercel.app`                                                                                                                                                                                        |
 | Title            | `Club Med Gym \| Salle de sport & fitness à Mourouj, Tunis`                                                                                                                                                    |
 | Meta Description | `Club Med Gym, votre salle de sport premium à Mourouj, Tunis. Musculation, cardio, coaching personnel, cours collectifs (Zumba, Boxing, Yoga). Équipements Technogym. Réservez votre séance d'essai gratuite.` |
-| Canonical        | `https://club-med-gym.vercel.app/`                                                                                                                                                                             |
-| Sitemap          | `https://club-med-gym.vercel.app/sitemap.xml`                                                                                                                                                                  |
-| Robots           | `https://club-med-gym.vercel.app/robots.txt`                                                                                                                                                                   |
+| Canonical        | `https://clubmedgym.vercel.app/`                                                                                                                                                                               |
+| Sitemap          | `https://clubmedgym.vercel.app/sitemap.xml`                                                                                                                                                                    |
+| Robots           | `https://clubmedgym.vercel.app/robots.txt`                                                                                                                                                                     |
 
-> ⚠️ Note: canonical uses `club-med-gym` (singular) while the site is `club-med-gym` (plural) — verify which is correct.
+> ⚠️ Note: canonical uses `clubmedgym` (singular) while the site is `clubmedgym` (plural) — verify which is correct.
 
 ---
 

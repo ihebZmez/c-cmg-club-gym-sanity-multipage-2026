@@ -117,7 +117,7 @@ const gymBenefits = [
 const clubInfo = {
   heading: "Visitez Club Med Gym",
   address: "Club Med Gym, Tunis, Tunisie",
-  contact: { phone: "(+216) 53 85 31 55", email: "contact@club-med-gym.tn" },
+  contact: { phone: "(+216) 53 85 31 55", email: "clubmedgym@gmail.com" },
 };
 
 // Club Hours (Updated to match Club Med Gym)

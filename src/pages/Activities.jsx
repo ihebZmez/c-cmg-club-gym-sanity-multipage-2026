@@ -40,8 +40,8 @@ const ActivitiesPage = () => {
       className="min-h-screen pt-8 pb-20 px-4 md:px-8 bg-gym-bg"
     >
       <Seo
-        title="Nos activités de fitness | Club Med Gym Mourouj"
-        description="Découvrez les activités Club Med Gym à Mourouj : musculation, cardio, crossfit, yoga, boxing, cours collectifs et coaching personnel."
+        title="Fitness & Activités Sportives à El Mourouj 1 | Club Med Gym"
+        description="Club Med Gym à El Mourouj 1, Ben Arous : musculation, cardio, CrossFit, cours collectifs, coaching et activités fitness pour tous les niveaux."
         canonical="/activites"
       />
       <div className="max-w-7xl mx-auto">

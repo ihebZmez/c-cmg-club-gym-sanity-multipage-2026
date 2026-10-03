@@ -16,8 +16,8 @@ const Home = () => {
   return (
     <>
       <Seo
-        title="Club Med Gym | Salle de sport & fitness à Mourouj, Tunis"
-        description="Club Med Gym est votre salle de sport premium à Mourouj, Tunis. Musculation, cardio, coaching personnel, cours collectifs, coaching sportif et séance d'essai gratuite."
+        title="Club Med Gym El Mourouj 1 | Salle de Sport & Fitness"
+        description="Club Med Gym à El Mourouj 1, Ben Arous : musculation, cardio, fitness, cours collectifs et coaching sportif. Découvrez nos activités et nos services."
         canonical="/"
       />
       <Hero /> {/* 1. Hook */}

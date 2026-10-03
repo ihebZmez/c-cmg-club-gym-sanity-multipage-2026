@@ -105,8 +105,8 @@ const PricingPage = () => {
       className="min-h-screen pt-8 pb-20 px-4 md:px-8 bg-gym-bg"
     >
       <Seo
-        title="Tarifs salle de sport | Club Med Gym"
-        description="Découvrez les abonnements et tarifs de Club Med Gym à Mourouj : accès gym, coaching, cours collectifs et offres premium."
+        title="Tarifs & Abonnements | Club Med Gym El Mourouj 1"
+        description="Découvrez les tarifs et abonnements du Club Med Gym à El Mourouj 1, Ben Arous : accès à la salle, fitness, cours collectifs et options de coaching."
         canonical="/tarifs"
       />
       <div className="max-w-7xl mx-auto">

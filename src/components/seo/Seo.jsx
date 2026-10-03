@@ -1,56 +1,80 @@
 import { Helmet } from "react-helmet-async";
 import { gymConfig } from "../../config/gymConfig";
 
-const defaultTitle = "Club Med Gym | Salle de sport & fitness à Mourouj, Tunis";
-const defaultDescription =
-  "Club Med Gym est votre salle de sport premium à Mourouj, Tunis : musculation, cardio, coaching personnel, cours collectifs, coaching sportif et séance d'essai gratuite.";
-const defaultKeywords =
-  "salle de sport Mourouj, gym Tunis, fitness Tunis, musculation Mourouj, coaching personnel Tunis, cours collectifs Tunis, Club Med Gym";
-
 const Seo = ({
-  title = defaultTitle,
-  description = defaultDescription,
+  title = "Club Med Gym El Mourouj 1 | Salle de Sport & Fitness",
+
+  description = "Club Med Gym à El Mourouj 1, Ben Arous : salle de sport, fitness, musculation, cardio, cours collectifs et coaching personnalisé en Tunisie.",
+
+  keywords = [
+    "Club Med Gym El Mourouj",
+    "Club Med Gym El Mourouj 1",
+    "CMG Sports Club El Mourouj",
+    "salle de sport El Mourouj",
+    "salle de sport El Mourouj 1",
+    "gym El Mourouj",
+    "fitness El Mourouj",
+    "musculation El Mourouj",
+    "salle de sport Ben Arous",
+    "fitness Ben Arous",
+    "coaching sportif El Mourouj",
+  ],
+
   canonical = "/",
-  image = `${gymConfig.siteUrl}/og-image.svg`,
-  keywords = defaultKeywords,
   noIndex = false,
+  image = "/og-image.jpg",
 }) => {
   const canonicalUrl = `${gymConfig.siteUrl}${canonical.startsWith("/") ? canonical : `/${canonical}`}`;
+
+  const imageUrl = image.startsWith("http")
+    ? image
+    : `${gymConfig.siteUrl}${image.startsWith("/") ? image : `/${image}`}`;
 
   return (
     <Helmet prioritizeSeoTags>
       <title>{title}</title>
+
       <meta name="description" content={description} />
-      <meta name="keywords" content={keywords} />
+
+      {/* Google does not use meta keywords for ranking.
+          Kept only if your template needs it. */}
+      <meta name="keywords" content={keywords.join(", ")} />
+
       <meta
         name="robots"
         content={
           noIndex ? "noindex,nofollow" : "index,follow,max-image-preview:large"
         }
       />
+
       <meta name="theme-color" content={gymConfig.accentColor} />
+
       <meta name="apple-mobile-web-app-title" content="Club Med Gym" />
+
       <link rel="canonical" href={canonicalUrl} />
-      <link rel="alternate" href={`${gymConfig.siteUrl}/`} hreflang="fr" />
-      <link
-        rel="alternate"
-        href={`${gymConfig.siteUrl}/`}
-        hreflang="x-default"
-      />
+
+      {/* French is the primary language */}
+      <link rel="alternate" href={gymConfig.siteUrl} hreflang="fr" />
+
+      <link rel="alternate" href={gymConfig.siteUrl} hreflang="x-default" />
+
+      {/* Only keep this if /en/ actually exists */}
       <link rel="alternate" href={`${gymConfig.siteUrl}/en/`} hreflang="en" />
 
+      {/* Open Graph */}
       <meta property="og:type" content="website" />
       <meta property="og:url" content={canonicalUrl} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
-      <meta property="og:image" content={image} />
+      <meta property="og:image" content={imageUrl} />
       <meta property="og:site_name" content="Club Med Gym" />
       <meta property="og:locale" content="fr_TN" />
 
+      {/* Twitter / X */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={image} />
+      <meta name="twitter:image" content={imageUrl} />
     </Helmet>
   );
 };

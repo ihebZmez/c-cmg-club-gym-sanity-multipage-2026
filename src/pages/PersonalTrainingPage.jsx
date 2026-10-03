@@ -7,8 +7,8 @@ export default function PersonalTrainingPage() {
   return (
     <div className="pt-24">
       <Seo
-        title="Coaching personnel | Club Med Gym Mourouj"
-        description="Profitez d'un coaching personnel personnalisé à Club Med Gym à Mourouj pour perdre du poids, prendre du muscle et améliorer votre forme."
+        title="Coaching Personnel à El Mourouj 1 | Club Med Gym"
+        description="Découvrez le coaching personnel au Club Med Gym à El Mourouj 1, Ben Arous : accompagnement personnalisé, entraînement adapté et suivi avec nos coachs."
         canonical="/coaching-personnel"
       />
       <PersonalTraining />

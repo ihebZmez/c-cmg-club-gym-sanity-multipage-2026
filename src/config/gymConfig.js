@@ -4,12 +4,12 @@
 export const gymConfig = {
   name: "Club Med Gym",
   tagline: "L'excellence du sport tunisien",
-  siteUrl: "https://club-med-gym.vercel.app",
+  siteUrl: "https://clubmedgym.vercel.app",
 
   // Contact
   phone: "+216 53 85 31 55",
   whatsapp: "+216 53 85 31 55",
-  email: "contact@club-med-gym.tn",
+  email: "clubmedgym@gmail.com",
   address: "Tunis, Tunisie",
 
   // Social Media
