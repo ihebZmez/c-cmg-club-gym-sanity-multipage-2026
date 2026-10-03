@@ -1,6 +1,6 @@
-# CMG Club Sports — SEO Audit Report
+# Club Med Gym — SEO Audit Report
 
-**Site:** cmg-club-sports.vercel.app
+**Site:** clubmedgym.vercel.app
 **Date:** 2026-09-21
 
 ---
@@ -67,16 +67,16 @@
 
 ## 📝 Current Meta
 
-| Field            | Value                                                                                                                                                                                                             |
-| ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| URL              | `cmg-club-sports.vercel.app`                                                                                                                                                                                      |
-| Title            | `CMG club sports \| Salle de sport & fitness à Mourouj, Tunis`                                                                                                                                                    |
-| Meta Description | `CMG club sports, votre salle de sport premium à Mourouj, Tunis. Musculation, cardio, coaching personnel, cours collectifs (Zumba, Boxing, Yoga). Équipements Technogym. Réservez votre séance d'essai gratuite.` |
-| Canonical        | `https://cmg-club-sport.vercel.app/`                                                                                                                                                                              |
-| Sitemap          | `https://cmg-club-sport.vercel.app/sitemap.xml`                                                                                                                                                                   |
-| Robots           | `https://cmg-club-sports.vercel.app/robots.txt`                                                                                                                                                                   |
+| Field            | Value                                                                                                                                                                                                          |
+| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| URL              | `clubmedgym.vercel.app`                                                                                                                                                                                        |
+| Title            | `Club Med Gym \| Salle de sport & fitness à Mourouj, Tunis`                                                                                                                                                    |
+| Meta Description | `Club Med Gym, votre salle de sport premium à Mourouj, Tunis. Musculation, cardio, coaching personnel, cours collectifs (Zumba, Boxing, Yoga). Équipements Technogym. Réservez votre séance d'essai gratuite.` |
+| Canonical        | `https://clubmedgym.vercel.app/`                                                                                                                                                                               |
+| Sitemap          | `https://clubmedgym.vercel.app/sitemap.xml`                                                                                                                                                                    |
+| Robots           | `https://clubmedgym.vercel.app/robots.txt`                                                                                                                                                                     |
 
-> ⚠️ Note: canonical uses `cmg-club-sport` (singular) while the site is `cmg-club-sports` (plural) — verify which is correct.
+> ⚠️ Note: canonical uses `clubmedgym` (singular) while the site is `clubmedgym` (plural) — verify which is correct.
 
 ---
 

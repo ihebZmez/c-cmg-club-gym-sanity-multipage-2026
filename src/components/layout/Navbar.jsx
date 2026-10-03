@@ -28,7 +28,7 @@ const Navbar = () => {
   const mobileOverlayRef = useRef(null);
   const mobileItemsRef = useRef([]);
 
-  const gymName = settings?.gymName || "CMG club sports";
+  const gymName = settings?.gymName || "Club Med Gym";
 
   const navLinks = [
     { path: "/", title: t("nav.home") },

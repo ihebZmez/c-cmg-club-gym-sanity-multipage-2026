@@ -216,7 +216,7 @@ const Hero = () => {
       <div className="absolute inset-0 z-0 overflow-hidden">
         <img
           src={POSTER_IMAGE}
-          alt="CMG club sports"
+          alt="Club Med Gym"
           className="absolute inset-0 w-full h-full object-cover"
           fetchPriority="high"
         />

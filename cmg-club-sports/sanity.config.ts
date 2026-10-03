@@ -5,7 +5,7 @@ import {schemaTypes} from './schemaTypes'
 
 export default defineConfig({
   name: 'default',
-  title: 'CMG club sports',
+  title: 'Club Med Gym',
 
   projectId: 'n3tfpc72',
   dataset: 'production',

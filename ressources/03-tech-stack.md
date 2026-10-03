@@ -20,4 +20,4 @@
 - `src/components` — layout, sections, forms, UI
 - `src/hooks` — Sanity data hooks
 - `src/queries` — GROQ queries
-- `cmg-club-sports/` — Sanity Studio & schemas
+- `clubmedgym/` — Sanity Studio & schemas

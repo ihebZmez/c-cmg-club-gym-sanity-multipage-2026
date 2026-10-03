@@ -24,7 +24,7 @@ export const testimonialsItems = [
     name: "Sophie Martin",
     role: "Coach Internationale",
     content:
-      "J'ai accompagné des sportifs dans le monde entier, mais CMG Club Sports reste une référence. La passion et l'excellence sont au rendez-vous.",
+      "J'ai accompagné des sportifs dans le monde entier, mais Club Med Gym reste une référence. La passion et l'excellence sont au rendez-vous.",
     rating: 5,
     image: "/images/testimonial3.jpg",
     location: "Paris/Tunis",

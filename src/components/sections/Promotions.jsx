@@ -212,7 +212,7 @@ const Promotions = () => {
           badge="Offres du moment"
           title="Profitez de nos"
           highlight="Promotions"
-          subtitle="Des offres exclusives pour rejoindre CMG club sports"
+          subtitle="Des offres exclusives pour rejoindre Club Med Gym"
           number="00"
         />
 
