@@ -48,7 +48,7 @@ const ReservationForm = () => {
         "subject",
         `Nouvelle réservation de ${formData.name || "client"}`,
       );
-      payload.append("from_name", "Site Web");
+      payload.append("from_name", "Club Med Sport Mourouj-Ben Arous Website");
 
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
